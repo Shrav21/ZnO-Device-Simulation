@@ -1,0 +1,169 @@
+
+# Define model
+define_model name=etcher
+
+# Add species from both tables
+add_source_species model=etcher name=CHF
+add_source_species model=etcher name=CF4
+add_source_species model=etcher name=CF3
+add_source_species model=etcher name=CF2
+add_source_species model=etcher name=CF
+add_source_species model=etcher name=C
+add_source_species model=etcher name=CHF3
+add_source_species model=etcher name=CHF2
+add_source_species model=etcher name=CHF
+add_source_species model=etcher name=CH
+add_source_species model=etcher name=O2
+add_source_species model=etcher name=Si
+add_source_species model=etcher name=SiO2
+add_source_species model=etcher name=SiF4
+add_source_species model=etcher name=SiO2_F2
+add_source_species model=etcher name=SiO2_CF2
+add_source_species model=etcher name=SiO2_H
+add_source_species model=etcher name=H2O
+add_source_species model=etcher name=CO
+add_source_species model=etcher name=H
+add_source_species model=etcher name=F
+
+# Add reactions from Table 4
+add_reaction model=etcher name=4_1 expression="F<g> + 0.25SiO2<b> = 0.25SiF4<g> + 0.25O2<g>"
+add_reaction model=etcher name=4_2 expression="F<g> + 0.5SiO2<s> = 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_3 expression="CF2<g> + SiO2<s> = SiO2_CF2<s>"
+add_reaction model=etcher name=4_4 expression="CF3<g> + 1.5SiO2<s> = SiO2_CF2<s> + 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_5 expression="CF<g> + 0.5SiO2_F2<s> + 0.5SiO2<s> = SiO2_CF2<s>"
+add_reaction model=etcher name=4_6 expression="CF2<g> + SiO2<b> + 2SiO2_F2<s> = CF2<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_7 expression="CF3<g> + SiO2<b> + 2SiO2_F2<s> = CF3<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_8 expression="CF<g> + SiO2<b> + 2SiO2_F2<s> = CF<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_9 expression="F<g> + SiO2<b> + 2SiO2_F2<s> = F<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_10 expression="Si<g> + SiO2<b> + 2SiO2_F2<s> = Si<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_11 expression="SiF<g> + SiO2<b> + 2SiO2_F2<s> = SiF<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_12 expression="SiF2<g> + SiO2<b> + 2SiO2_F2<s> = SiF2<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_13 expression="SiF3<g> + SiO2<b> + 2SiO2_F2<s> = SiF3<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_14 expression="O<g> + SiO2<b> + 2SiO2_F2<s> = O<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_15 expression="O2<g> + SiO2<b> + 2SiO2_F2<s> = O2<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_16 expression="CO<g> + SiO2<b> + 2SiO2_F2<s> = CO<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_17 expression="CF2<g> + SiO2<b> + 2SiO2_CF2<s> = CF2<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_18 expression="CF3<g> + SiO2<b> + 2SiO2_CF2<s> = CF3<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_19 expression="CF<g> + SiO2<b> + 2SiO2_CF2<s> = CF<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_20 expression="F<g> + SiO2<b> + 2SiO2_CF2<s> = F<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_21 expression="Si<g> + SiO2<b> + 2SiO2_CF2<s> = Si<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_22 expression="SiF<g> + SiO2<b> + 2SiO2_CF2<s> = SiF<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_23 expression="SiF2<g> + SiO2<b> + 2SiO2_CF2<s> = SiF2<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_24 expression="SiF3<g> + SiO2<b> + 2SiO2_CF2<s> = SiF3<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_25 expression="O<g> + SiO2<b> + 2SiO2_CF2<s> = O<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_26 expression="O2<g> + SiO2<b> + 2SiO2_CF2<s> = O2<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_27 expression="CO<g> + SiO2<b> + 2SiO2_CF2<s> = CO<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=4_28 expression="CF3<g> + SiO2<s> = CF3<g> + SiO2<s>"
+add_reaction model=etcher name=4_29 expression="CF2<g> + SiO2<s> = CF2<g> + SiO2<s>"
+add_reaction model=etcher name=4_30 expression="CF<g> + SiO2<s> = CF<g> + SiO2<s>"
+add_reaction model=etcher name=4_31 expression="F<g> + SiO2<s> = F<g> + SiO2<s>"
+add_reaction model=etcher name=4_32 expression="Si<g> + SiO2<s> = Si<g> + SiO2<s>"
+add_reaction model=etcher name=4_33 expression="SiF<g> + SiO2<s> = SiF<g> + SiO2<s>"
+add_reaction model=etcher name=4_34 expression="SiF2<g> + SiO2<s> = SiF2<g> + SiO2<s>"
+add_reaction model=etcher name=4_35 expression="SiF3<g> + SiO2<s> = SiF3<g> + SiO2<s>"
+add_reaction model=etcher name=4_36 expression="O<g> + SiO2<s> = 0.5O2<g> + SiO2<s>"
+add_reaction model=etcher name=4_37 expression="O2<g> + SiO2<s> = O2<g> + SiO2<s>"
+add_reaction model=etcher name=4_38 expression="CO<g> + SiO2<s> = CO<g> + SiO2<s>"
+add_reaction model=etcher name=4_39 expression="CF3<g> + 1.5SiO2<s> = SiO2_CF2<s> + 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_40 expression="CF2<g> + SiO2<s> = SiO2_CF2<s>"
+add_reaction model=etcher name=4_41 expression="CF<g> + SiO2_F2<s> + 0.5SiO2<s> = SiO2_CF2<s> + 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_42 expression="F<g> + 0.5SiO2<s> = 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_43 expression="SiF<g> + 0.5SiO2<s> = Si<g> + 0.5SiO2_F2<s>"
+add_reaction model=etcher name=4_44 expression="SiF2<g> + SiO2<s> = Si<g> + SiO2_F2<s>"
+add_reaction model=etcher name=4_45 expression="SiF3<g> + 1.5SiO2<s> = Si<g> + 1.5SiO2_F2<s>"
+add_reaction model=etcher name=4_46 expression="F<g> + 0.5SiO2_CF2<s> = 0.5CF4<g> + 0.5SiO2<s>"
+add_reaction model=etcher name=4_47 expression="Si<g> + SiO2_CF2<s> = CF<g> + SiF<g> + SiO2<s>"
+add_reaction model=etcher name=4_48 expression="SiF<g> + SiO2_CF2<s> = SiF2<g> + CF<g> + SiO2<s>"
+add_reaction model=etcher name=4_49 expression="SiF3<g> + SiO2_CF2<s> = SiF4<g> + CF<g> + SiO2<s>"
+add_reaction model=etcher name=4_50 expression="Si<g> + SiO2_F2<s> = SiF2<g> + SiO2<s>"
+add_reaction model=etcher name=4_51 expression="SiF<g> + SiO2_F2<s> = SiF3<g> + SiO2<s>"
+add_reaction model=etcher name=4_52 expression="SiF2<g> + SiO2_F2<s> = SiF4<g> + SiO2<s>"
+add_reaction model=etcher name=4_53 expression="SiF3<g> + 0.5SiO2_F2<s> = SiF4<g> + 0.5SiO2<s>"
+add_reaction model=etcher name=4_54 expression="C<g> + SiO2_F2<s> = CF2<g> + SiO2<s>"
+add_reaction model=etcher name=4_55 expression="O<g> = 0.5O2<g>"
+
+# Add reactions from Table 11
+add_reaction model=etcher name=11_1 expression="H<g> + SiO2<s> = SiO2_H<s>"
+add_reaction model=etcher name=11_2 expression="H<g> + SiO2_H<s> = SiO2<s> + H2<g>"
+add_reaction model=etcher name=11_3 expression="F<g> + SiO2_H<s> = SiO2<s> + HF<g>"
+add_reaction model=etcher name=11_4 expression="CF2<g> + SiO2_H<s> = CHF2<g> + SiO2<s>"
+add_reaction model=etcher name=11_5 expression="CF<g> + SiO2_H<s> = CHF<g> + SiO2<s>"
+add_reaction model=etcher name=11_6 expression="CHF2<g> + SiO2<s> = SiO2_CF2<s> + H<g>"
+add_reaction model=etcher name=11_7 expression="CHF<g> + SiO2_F2<s> + 0.5SiO2<s> = SiO2_CF2<s> + 0.5SiO2_F2<s> + H<g>"
+add_reaction model=etcher name=11_8 expression="CF2<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CF2<g> + SiF4<g> + H2O<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_9 expression="CF3<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CF2<g> + SiF4<g> +H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_10 expression="CF<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CF<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_11 expression="SiF<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = SiF<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_12 expression="SiF2<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = SiF2<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_13 expression="SiF3<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = SiF3<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_14 expression="O2<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = O2<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>" 
+add_reaction model=etcher name=11_15 expression="O<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = O2<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_16 expression="CO<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CO<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_17 expression="CHF2<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CHF2<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_18 expression="CHF<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = CHF<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_19 expression="H<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = H<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_20 expression="H2<g> + SiO2<b> + 2SiO2_H<s> + SiO2_CF2<s> + SiO2_F2<s> = H2<g> + SiF4<g> + H20<v> + CO<g> + 4SiO2<s>"
+add_reaction model=etcher name=11_21 expression="CHF2<g> + SiO2<b> + 2SiO2_F2<s> = CHF2<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_22 expression="CHF<g> + SiO2<b> + 2SiO2_F2<s> = CHF<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_23 expression="H<g> + SiO2<b> + 2SiO2_F2<s> = H<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_24 expression="H2<g> + SiO2<b> + 2SiO2_F2<s> = H2<g> + SiF4<g> + O2<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_25 expression="CHF2<g> + SiO2<b> + 2SiO2_CF2<s> = CHF2<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_26 expression="CHF<g> + SiO2<b> + 2SiO2_CF2<s> = CHF<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_27 expression="H<g> + SiO2<b> + 2SiO2_CF2<s> = H<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_28 expression="H2<g> + SiO2<b> + 2SiO2_CF2<s> =  H2<g> + SiF4<g> + 2CO<g> + 2SiO2<s>"
+add_reaction model=etcher name=11_29 expression="CHF<g> + 1.5SiO2<s> + SiO2_F2<s> = SiO2_CF2<s> + SiO2_H<s> + 0.5SiO2_F2<s>"
+add_reaction model=etcher name=11_30 expression="CHF2<g> + 2SiO2<s> = SiO2_CF2<s> + SiO2_H<s>"
+add_reaction model=etcher name=11_31 expression="CHF<g> + SiO2<s> = CHF<g> + SiO2<s>"
+add_reaction model=etcher name=11_32 expression="CHF2<g> + SiO2<s> = CHF2<g> + SiO2<s>"
+add_reaction model=etcher name=11_33 expression="H<g> + SiO2<s> = H<g> + SiO2<s>"
+add_reaction model=etcher name=11_34 expression="H2<g> + SiO2<s> = H2<g> + SiO2<s>"
+
+# Adding reaction properties
+
+add_reaction_properties reaction=4_6 probability=0.066 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_7 probability=0.092 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_8 probability=0.041 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_9 probability=0.025 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_10 probability=0.037 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_11 probability=0.062 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_12 probability=0.088 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_13 probability=0.113 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_14 probability=0.021 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_15 probability=0.042 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_16 probability=0.037 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_17 probability=0.067 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_18 probability=0.093 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_19 probability=0.042 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_20 probability=0.026 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_21 probability=0.038 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_22 probability=0.063 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_23 probability=0.090 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_24 probability=0.116 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_25 probability=0.021 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_26 probability=0.044 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=4_27 probability=0.038 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+
+
+
+
+add_reaction_properties reaction=11_8 probability=0.067 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_9 probability=0.093 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_10 probability=0.042 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_11 probability=0.063 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_12 probability=0.090 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_13 probability=0.116 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_14 probability=0.044 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_15 probability=0.022 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_16 probability=0.038 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_17 probability=0.069 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_18 probability=0.043 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_19 probability=0.001 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_20 probability=0.003 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_21 probability=0.068 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_22 probability=0.042 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_23 probability=0.001 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_24 probability=0.003 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_25 probability=0.069 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_26 probability=0.043 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_27 probability=0.001 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
+add_reaction_properties reaction=11_18 probability=0.003 energy_exponent=0.5 energy_reference=9<eV> energy_threshold=4<eV>
